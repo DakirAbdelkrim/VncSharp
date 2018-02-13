@@ -632,7 +632,7 @@ namespace VncSharp
 		/// <returns>Returns a String representation of bytes.</returns>
 		protected static string GetString(byte[] bytes)
 		{
-			return Encoding.UTF8.GetString(bytes, 0, bytes.Length);
+			return Encoding.UTF8.GetString(bytes, 0, bytes.Length-1);
 		}
 
 		/// <summary>
